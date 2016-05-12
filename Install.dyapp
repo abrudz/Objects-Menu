@@ -1,0 +1,3 @@
+Target ⎕SE
+Load ObjectsMenu -nolink
+Run ⎕SE.ObjectsMenu.Install
