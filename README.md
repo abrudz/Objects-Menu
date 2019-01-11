@@ -1,9 +1,9 @@
-#Recent objects menu for apl
+#Recent objects menu for APL
 Creates a menu which allows the creation of new objects through Dyalog, and displays the 9 (maximum) most recently edited objects. Clicking on one of these recently edited objects will open up the edit window for that object.
 
 # Installation Process
 I have tried to make the install as simple as possible:
-- Open the Install.dyapp file by double slicking it or running ⎕SE.SALT.Boot passing the filepath to the right.
+- Open the Install.dyapp file by double clicking it or running ⎕SE.SALT.Boot passing the filepath to the right.
 - Make sure you save your session. The install is relevant to the session.
 
 # Usage
