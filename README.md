@@ -7,4 +7,4 @@ I have tried to make the install as simple as possible:
 - Make sure you save your session. The install is relevant to the session.
 
 # Usage
-The menu sits in the IDE menu bar and will display a list of recently edited functions,objects,etc. in the dropdown. Clicking one of these menu items will lead you to the editor. Extra functionality includes the ability to add all kinds of structures via a sub-menu.
+The menu sits in the IDE menu bar and will display a list of recently edited functions, objects, etc. in the dropdown. Clicking one of these menu items will lead you to the editor. Extra functionality includes the ability to add all kinds of structures via a sub-menu.
