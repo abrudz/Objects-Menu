@@ -9,9 +9,9 @@
       ∆OnWorkspaceLoaded←dis ⎕SE.onWorkspaceLoaded
       ⎕SE.onWorkspaceLoaded←'Init'
       ⎕SE.⎕WX←owx
-	  ⎕←''
-	  ⎕←'***Objects Menu installed.***'
-      ⎕←'***Please save your session and restart Dyalog.***' 
+      ⎕←''
+      ⎕←'***Objects Menu installed.***'
+      ⎕←'***Please save your session and restart Dyalog.***'
     ∇
 
     ∇ Init msg;qed;old;cb
@@ -29,7 +29,7 @@
     ∇
 
     ∇ OM_OnAfterFix msg;space;name;new
-      space name new←¯3↑msg
+      space name new←msg[4 5 6]
       Add(⍕space),'.',name{~0∊⍴⍵:⍵ ⋄ ⍺}new
       :If 0≢⊃∆OnAfterFix
           ⍎'⎕SE.',∆OnAfterFix,' msg'
@@ -41,7 +41,7 @@
       m.RecentObjects←{(9⌊≢⍵)↑⍵}(⊂item)∪m.RecentObjects
       m.(mis↑⍨←≢RecentObjects)
       m.(mis.Caption←(⍳≢RecentObjects){'&',(⍕⍺),' ',⍵}¨RecentObjects)
-      m.mis.(onSelect←'⍎⎕ED ''',3↓Caption,'''')
+      m.mis.(onSelect←'⍎⎕ED& ''',3↓Caption,'''')
     ∇
 
     ∇ {m}←CreateMenu;i;caption;name;∆
